@@ -38,14 +38,18 @@ h3 {
     font-size: 2em;
     font-weight: 900;
 }
-iframe {
+/* iframe {
     display :block;
     margin: 2em auto;
     border: 0;
+} */
+cite {
+    padding: 10px 20px;
+    margin: 0 0 20px;
 }
 
 
-/* Remove unnecessary Bootstrap 3 styling */
+/* Remove or modify unnecessary Bootstrap 3 styling */
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -59,13 +63,43 @@ p {
 h3 {
     margin-top: 0;
 }
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+.navbar-default {
+    background-color: #1D2124;
+    border-color: #1D2124;
+}
+#navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+.jumbotron {
+    background-color: #fafafa;
+}
+.panel {
+    margin-bottom: 0;
+}
+.panel-default {
+    border: 0px;
+    border-left: 6px solid #1D2124;
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.col-lg-5 {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 
 
-@media only screen and (min-width: 600px) {
-    iframe {
-        width: 500px;
-        height: 281.25px;
+
+@media only screen and (max-width: 600px) {
+    .bootstrapChild {
+        margin-bottom: 16px;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -80,10 +114,10 @@ h3 {
         -ms-flex-pack: center;
         justify-content: center;
     }
-    iframe {
+    /* iframe {
         width: 800px;
         height: 450px;
-    }
+    } */
     /*--------------------------------------------------------------------------
     HEADER
     --------------------------------------------------------------------------*/
@@ -126,6 +160,17 @@ h3 {
     .gimp-info {
         border-left: 10px solid #1D2124;
     }
+
+}
+@media only screen and (min-width: 992px) {
+    .bootstrapChild {
+        margin: 20px
+    }
+}
+@media only screen and (max-width: 992px) {
+    .bootstrapChild {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -147,9 +192,6 @@ MAIN
 
 /* Styling for DIVs of the main content */
 .right {
-    padding: 1.4em;
-}
-.left {
     padding: 1.4em;
 }
 .left a {
@@ -202,14 +244,14 @@ FOOTER
 Styling for COMPONENTS
 ------------------------------------------------------------------------------*/
 /* Tools I used to create the game */
-.gimp-box {
+/* .gimp-box {
     background-color: #fafafa;
     padding: 1em;
     margin-bottom: 1em;
 }
 .gimp-info {
     border-left: 6px solid #1D2124;
-}
+} */
 
 .unrealengine { color: black; }
 .gimp { color: darkslategray; }
